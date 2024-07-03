@@ -5,17 +5,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-public class TestingController {
+public class AccountController {
 	
-	@GetMapping("/hello")
-	public String hello() {
-		return "Hello";
+	@GetMapping("/myAccount")
+	public String getAccountDetails() {
+		return "Here are the account details from the DB";
 	}
 	
 
-	@GetMapping("/hello/1")
-	public String hello1() {
-		return "Hello";
-	}
-	
+
 }
