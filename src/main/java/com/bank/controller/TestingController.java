@@ -11,4 +11,11 @@ public class TestingController {
 	public String hello() {
 		return "Hello";
 	}
+	
+
+	@GetMapping("/hello/1")
+	public String hello1() {
+		return "Hello";
+	}
+	
 }
